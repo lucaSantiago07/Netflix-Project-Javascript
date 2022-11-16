@@ -30,6 +30,6 @@ Problemas que buscarei resolver na versão 2.0:
 - Quando vou para escolher gerenciar perfil e clico em um dos perfis, consigo criar uma página dinâmica, mas não estou conseguindo criar um script dinâmico para essa página.
  Ex: Se clico no 1º perfil, vai para o "perfil1", no segundo "perfil3" e assim por diante, 
  mas não consegui ainda adicionar dinamicamente um script para esse html.
-- Configurar os botões da página de edição do perfil
+- Configurar os botões da página de edição do perfil.
 - Quando for criar um novo perfil, abrir um seletor com 5 imagens para que o usuário escolha a sua imagem de perfil dentre as opções oferecidas (assim não precisaria copiar a url e colocar no prompt)
 - Substituir o prompt por outra coisa mais "amigável", por assim dizer.

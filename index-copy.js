@@ -32,7 +32,6 @@ var one = 0
                     newe.appendChild(show)  
                     
                     newe.appendChild(text1)                   
-
                     
                     const botaoo = document.getElementById('agua')
                     let nomes = document.getElementById('bot')
