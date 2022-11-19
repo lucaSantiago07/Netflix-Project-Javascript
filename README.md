@@ -24,8 +24,9 @@ Dica = Crie, pelo menos, 3 perfis.<br>
 - Até o momento essas são as funcionalidades, verifique os arquivos JS para maiores detalhes.<br>
 </p>
 
-vídeo demonstrativo:
-https://youtu.be/ta3NfMheVEM (versão 1.0)
+vídeo demonstrativo:<br>
+https://youtu.be/ta3NfMheVEM (versão 1.0)<br>
+https://youtu.be/WEGvv77W9Ok (versão 1.5)
 
 
 <h3>Mudanças Netflix 1.5:</h3>
