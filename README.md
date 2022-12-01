@@ -13,21 +13,22 @@ A ideia inicial é colocar em prática o que estou aprendendo em HTML/CSS/JS clo
 
 <h3>Como utilizar e o que esperar do site:</h3>
 <p>- É um site de 3 páginas
-- Quando clicar em "novo perfil", abrirá um prompt pedindo o nome de usuário e depois um prompt pedindo uma url de uma imagem (pode usar qualquer imagem da internet)<br>
+- Quando clicar em "novo perfil", abrirá um prompt pedindo o nome de usuário, um prompt pedindo a faixa etária e um prompt pedindo para escolher uma das imagens de perfil (cada faixa etária possui imagens específicas)
 - Assim que terminar de responder o prompt da imagem, um perfil será criado com uma imagem e um nome abaixo dela.<br>
 Dica = Crie, pelo menos, 3 perfis.<br>
-- Se o link da url não for válido, ficará um quadrado escuro.<br>
-- Clicando no perfil, será direcionado para o browse (não feito ainda).<br>
+- Há um limite de perfis: 5 <br>
+
+- Clicando no perfil, será direcionado para o browse onde terá apenas o Header da página principal da netflix.<br>
 - Clicando em "Gerenciar perfil", os mesmos perfis criados anteriormente aparecerão no mesmo estilo da página inicial.<br>
 - Na página "Gerenciar perfil" os perfis são clicáveis, então, clicando no primeiro, ele será redirecionado para edição do perfil 1, no segundo, perfil 2 e assim por diante.<br>
-- O perfil 1 é o único que está configurado, pois é uma página não dinâmica.<br>
+- É possível editar nome, imagem(clicando na foto) e a faixa etária clicando em "editar". 'Salvar', salva as alterações; 'cancelar', não salva nenhuma alteração e 'excluir perfil', exclui o perfil, deixando ele vazio para a criação de um novo perfil <br> 
 - Até o momento essas são as funcionalidades, verifique os arquivos JS para maiores detalhes.<br>
 </p>
 
 vídeo demonstrativo:<br>
 https://youtu.be/ta3NfMheVEM (versão 1.0)<br>
 https://youtu.be/WEGvv77W9Ok (versão 1.5)
-
+https://youtu.be/hQK3l3r-a-s (versão 2.0)
 
 <h3>Mudanças Netflix 1.5:</h3>
 <p>- Organização dos arquivos em pastas.<br>
@@ -41,9 +42,11 @@ https://youtu.be/WEGvv77W9Ok (versão 1.5)
 - Quando exclui o perfil, alteração é feita e o perfil fica disponível para criação novamente<br>
 - Melhora na estrutura do CSS de todo o site<br></p>
 
-<h3>Problemas que buscarei resolver na versão 2.0:</h3>
+<h3>Mudanças Netflix 2.0:</h3>
 <p>- Colocar a favicon Icon no title<br>
-- Escolher uma fonte no Google Fonts para colocar no site<br>
 - Iniciar a produção do browse.<br>
-- Colocar o load antes de entrar no browse<br>
 - Dentro do Browse, criar o header (menu ao lado do logo, menu suspenso com as opções do perfil e colocar a logo)</p>
+
+<h3> Problemas para resolver na Netflix 2.3:</h3>
+<p>- Criar a DIV que contém o vídeo principal da netflix<br>
+- Criar a primeira faixa de vídeos ("Adicionados recentemente")
