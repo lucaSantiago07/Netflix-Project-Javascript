@@ -17,6 +17,21 @@ section{
  }
 
 
+@keyframes pageLoad {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-webkit-keyframes pageLoad {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.pageLoad{
+    animation: pageLoad 0.5s ease-in-out;
+}
+
+
  #fazme {
 position: absolute;
 margin-top: 55px;
@@ -45,6 +60,7 @@ span{
     display:inline-block;
     margin-left: -18px;
     width: 200px;
+    
 }
 
 
@@ -53,16 +69,12 @@ span{
     height: 150px;
     border-radius: 6x;
     border: 4px solid transparent;
-    border-radius: 6px;
-    
-    
-    
+    border-radius: 6px; 
 }
 
 #images:hover{
     border:4px solid white;
     border-radius: 6px;
-
 }
 
 .imagesNull {

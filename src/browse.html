@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../profile-images/logo-netflix.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style-browse.css">
+    <title>Netflix</title>
+    <script src="browse.js"></script>
+</head>
+<body>
+    <header>
+        <a href="./browse.html"><img src="../profile-images/netflix-browse-logo.png"></a>
+        <ul>
+            <li>Início</li>
+            <li>Séries</li>
+            <li>Filmes</li>
+            <li>Bombando</li>
+            <li>Minha lista</li>
+            <li>Navegar por idiomas</li>
+        </ul>
+        <ul>
+           <li id="li-pesquisa"> <input type="checkbox" name="" id="checar"> <input type="search" id="inputSearch" placeholder="Títulos, personagens e gêneros" onclick="checkTrue()"> </li>  
+           <li id="faixaEtaria">"Nome da faixa etária"</li>
+           <li id="notificacao" onmouseenter="openNotifications()" > <img src="../profile-images/logo-notificacoes.png" alt="Notificações"> 
+            <div class="notificacao-content" id="div-notifications" onmouseleave="closeNotifications()">
+                <a> <img src="../profile-images/boy-one.png"> minus incidunt quidem praesentium, dolore quam omnis? Quia magnam voluptates et exercitationem expedita repudiandae sunt earum.</a>
+                <a> <img src="../profile-images/boy-one.png"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint non aut sequi suscipit earum iusto? Delectus iste adipisci voluptatibus laboriosam vitae nisi repellat! Laborum obcaecati temporibus sint tenetur reiciendis non.</a>
+                <a> <img src="../profile-images/boy-one.png"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio repellat eius earum eligendi vero expedita harum minima voluptate! Sint nisi incidunt maiores molestias fuga enim maxime esse saepe facilis veniam!</a>
+                <a> <img src="../profile-images/boy-one.png"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio repellat eius earum eligendi vero expedita harum minima voluptate! Sint nisi incidunt maiores molestias fuga enim maxime esse saepe facilis veniam!</a>
+                <a> <img src="../profile-images/boy-one.png"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio repellat eius earum eligendi vero expedita harum minima voluptate! Sint nisi incidunt maiores molestias fuga enim maxime esse saepe facilis veniam!</a>
+                <a> <img src="../profile-images/boy-one.png"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio repellat eius earum eligendi vero expedita harum minima voluptate! Sint nisi incidunt maiores molestias fuga enim maxime esse saepe facilis veniam!</a>
+                <a> <img src="../profile-images/boy-one.png"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio repellat eius earum eligendi vero expedita harum minima voluptate! Sint nisi incidunt maiores molestias fuga enim maxime esse saepe facilis veniam!</a>
+                <a> <img src="../profile-images/boy-one.png"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio repellat eius earum eligendi vero expedita harum minima voluptate! Sint nisi incidunt maiores molestias fuga enim maxime esse saepe facilis veniam!</a>
+            </div>
+        </li>
+           <li onmouseenter="menuenter()" > <img id="perfil" alt="Perfil"> &nbsp;<img id="seta" class="setas" src="../profile-images/seta-triangular-preenchida-para-baixo.png"></img>
+            <select class="menu-suspense" id="menu-suspense" size="7" onmouseleave="chama()">
+                <option id="perfil2"> Perfil 1</option>
+                <option id="perfil3"><img src="">Perfil 2</option>
+                <option id="perfil4"><img src="">Perfil 3</option>
+                <option id="perfil5"><img src="">Perfil 4</option>
+                
+                <option>Gerenciar Perfis</option>
+                <option>Conta</option>
+                <option>Sair da Netflix</option>
+            </select>
+           </li> 
+    </ul>
+    </header>
+
+
+</body>
+</html>
