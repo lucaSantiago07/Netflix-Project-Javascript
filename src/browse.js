@@ -26,40 +26,30 @@ window.onload = function () {
         }   
 
         var perfilName = JSON.parse(localStorage.getItem(('perfis')))
-   /* perfil2.innerText = perfilName[2]*/
         var perfisImages = []
 
         for (let i = 0; i <perfilName.length; i++){
             if (i%2==0)
-               /* console.log (perfisImages)*/
                 perfisImages.push(perfilName[i])
-                /*console.log (perfilName[i])*/
-                       
-                /*console.log (`Valor do i= ${i} ${perfisMenu[i]}`)*/
-            }
+               }
 
-            console.log (perfisImages)
+            
         for (let i = 1; i < perfisImages.length; i++){
             perfisMenu[i-1].innerText = perfisImages[i]
-            console.log (perfisMenu[i-1])
+            
         }
-            /*  for (let i = 0; i < perfisMenu.length; i++) {
-            pImg[i] = document.createElement ('img')
-            pImg[i].src = perfisImages[i]
-            perfisMenu[i].appendChild (pImg[i])
-        }*/
-
-
-/*     perfisMenu.forEach (function(novo, new3, hcg) {
-        console.log (hcg)
-        console.log (novo.innerHTML = new3)
-        console.log (novo)
-    });*/
-
     var perfilImage = JSON.parse(localStorage.getItem(('perfis')))
             perfil.src = perfilImage[1]
     
-}
+    let nameVideo = document.getElementById('iframeOne')
+    document.getElementById('serie-title').innerText = nameVideo.title
+
+    let resumeVideo = document.getElementById('resumeOne').innerHTML
+    document.getElementById('serie-resume').innerText = resumeVideo
+    document.getElementById('description-two').innerText = resumeVideo
+    
+
+        }
 
 var numberInput = 0
 function searchEnter() {
@@ -98,8 +88,7 @@ function checkTrue () {
     }
 }
  
-
-function menuenter(){
+function openMenuSuspense(){
     var menuPerfil = document.getElementById('menu-suspense')
     var seta = document.getElementById('seta')
     seta.style.transform = 'rotate(180deg)'
@@ -109,7 +98,7 @@ function menuenter(){
     menuPerfil.style.display='block'  
 }
 
-function chama() {
+function closeMenuSuspense() {
     var menuPerfil = document.getElementById('menu-suspense')
     var seta = document.getElementById('seta')
     seta.style.transform = 'rotate(0deg)'
@@ -122,13 +111,130 @@ function chama() {
 let condicional = 0
 function openNotifications() {
     if (condicional == 0) {
-        document.getElementById('div-notifications').style.display = 'block' 
-        
+      document.getElementById('div-notifications').style.display = 'block'   
     }
-  
 }
-
 function closeNotifications () {
     document.getElementById('div-notifications').style.display = 'none'
 
 }
+(function () {
+    var menu = document.getElementById('menuHead'); // colocar em cache
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 0){ menu.classList.add('menuFixo')
+         menu.style.transition = '0.5s'; } // > 0 ou outro valor desejado
+        else menu.classList.remove('menuFixo');
+    });
+})();
+var muteIf = 0 
+var muteTwo = ''
+function mute () {
+      
+    var muteOne = document.getElementById('iframeOne')
+    
+        if (muteIf == 0) {
+            muteIf = 1
+            muteOne.src += "&mute=1"
+            muteTwo = muteOne.src.substring(0,69)
+            console.log (muteOne)
+            
+            
+            document.getElementById('soundIcon').style.visibility = 'hidden'
+        }
+        else if (muteIf == 1) {
+            muteIf = 0
+            muteOne.src = muteTwo
+            
+            console.log (muteOne)
+            document.getElementById('soundIcon').style.visibility = 'visible'
+            }
+   
+}
+
+function showMessage () {
+    var listButton = document.getElementById('listButton')
+    var listMessage = document.getElementById('list-message')    
+    listMessage.style.display = 'block'
+}
+
+function hiddenMessage () {
+    var listMessage = document.getElementById('list-message')    
+    listMessage.style.display = 'none'
+}
+
+function showLikeButtons (){
+    var likesList = document.getElementById('likeList')
+    likesList.style.animation = 'openLikeButtons 1s ease'
+    likesList.style.visibility = 'visible'
+}
+
+function closeLikeButtons () {
+    var likesList = document.getElementById('likeList')
+    likesList.style.animation = 'closeLikeButtons 1s ease'
+    likesList.style.visibility = 'hidden'
+    likesList.style.transitionDelay = '1s'
+
+}
+
+function openModal () {
+    document.getElementById('ModalMoreInfo').style.visibility = 'visible'
+    document.getElementById('main-content-img').style.opacity = '0.2'
+    document.getElementById('main-content-text').style.opacity = '0.2'
+    document.getElementById('serie-title').style.opacity = '0.2'
+    document.getElementById('serie-resume').style.opacity = '0.2'
+    document.getElementById('playWatch').style.opacity = '0.2'
+    document.getElementById('moreInfo').style.opacity = '0.2'
+    document.getElementById('volVideo').style.opacity = '0.2'
+    document.getElementById('iframeOne').style.opacity = '0.2'
+    document.getElementById('menuHead').style.opacity = '0.2'   
+    document.getElementById('ModalMoreInfo').style.animation = 'openModal 0.3s'
+}
+
+function closeModal () {
+    document.getElementById('menuHead').style.opacity = '0.8'  
+    document.getElementById('main-content-img').style.opacity = '1'
+    document.getElementById('main-content-text').style.opacity = '1'
+    document.getElementById('serie-title').style.opacity = '1'
+    document.getElementById('serie-resume').style.opacity = '1'
+    document.getElementById('playWatch').style.opacity = '1'
+    document.getElementById('moreInfo').style.opacity = '1'
+    document.getElementById('volVideo').style.opacity = '1'
+    document.getElementById('main-content-img').style.opacity = '0.8'
+   document.getElementById('ModalMoreInfo').style.animation = 'closeModal 0.3s forwards'
+  
+    setTimeout (function() {
+        document.getElementById('ModalMoreInfo').style.visibility = 'hidden'
+    }, 400) 
+}
+
+
+function showLikeMessageOne () {
+    document.getElementById('messageOne').style.visibility = 'visible'    
+    document.getElementById('messageOne').style.transitionDelay = '0.1s'
+}
+
+function closeLikeMessageOne() {
+    document.getElementById('messageOne').style.visibility = 'hidden'
+    
+}
+
+function showLikeMessageTwo() {
+    document.getElementById('messageTwo').style.visibility = 'visible'    
+    document.getElementById('messageTwo').style.transitionDelay = '0.1s'
+}
+
+function closeLikeMessageTwo() {
+    document.getElementById('messageTwo').style.visibility = 'hidden'
+}
+
+function showLikeMessageThree () {
+    document.getElementById('messageThree').style.visibility = 'visible'    
+    document.getElementById('messageThree').style.transitionDelay = '0.1s'
+}
+
+function closeLikeMessageThree() {
+    document.getElementById('messageThree').style.visibility = 'hidden'
+}
+
+
+

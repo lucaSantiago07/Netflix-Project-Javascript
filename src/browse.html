@@ -7,10 +7,10 @@
     <link rel="shortcut icon" href="../profile-images/logo-netflix.png" type="image/x-icon" />
     <link rel="stylesheet" href="style-browse.css">
     <title>Netflix</title>
-    <script src="browse.js"></script>
+    
 </head>
 <body>
-    <header>
+    <header id="menuHead">
         <a href="./browse.html"><img src="../profile-images/netflix-browse-logo.png"></a>
         <ul>
             <li>Início</li>
@@ -35,8 +35,8 @@
                 <a> <img src="../profile-images/boy-one.png"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio repellat eius earum eligendi vero expedita harum minima voluptate! Sint nisi incidunt maiores molestias fuga enim maxime esse saepe facilis veniam!</a>
             </div>
         </li>
-           <li onmouseenter="menuenter()" > <img id="perfil" alt="Perfil"> &nbsp;<img id="seta" class="setas" src="../profile-images/seta-triangular-preenchida-para-baixo.png"></img>
-            <select class="menu-suspense" id="menu-suspense" size="7" onmouseleave="chama()">
+           <li onmouseenter="openMenuSuspense()" > <img id="perfil" alt="Perfil"> &nbsp;<img id="seta" class="setas" src="../profile-images/seta-triangular-preenchida-para-baixo.png"></img>
+            <select class="menu-suspense" id="menu-suspense" size="7" onmouseleave="closeMenuSuspense()">
                 <option id="perfil2"> Perfil 1</option>
                 <option id="perfil3"><img src="">Perfil 2</option>
                 <option id="perfil4"><img src="">Perfil 3</option>
@@ -49,7 +49,56 @@
            </li> 
     </ul>
     </header>
-
-
+    <div id="main-content">
+        <figure>
+            <iframe width="100%" height="100%" id="iframeOne" src="https://www.youtube.com/embed/WEGvv77W9Ok?autoplay=1&controls=0"  title="Projeto Netflix Versão 1.5" frameborder="0" allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <figcaption hidden id="resumeOne">Versão 1.5 do Projeto Netflix criado do zero e em HTML, CSS, JAVASCRIPT</figcaption>
+        </figure>
+    </div>
+    <div id="main-content-above"><img src="../profile-images/logo-netflix.png" alt="" id="main-content-img">
+        <p id="main-content-text">SÉRIE</p><br>
+        <p id="serie-title"></p>
+        <p id="serie-resume"></p>
+        <button id="playWatch"> <i> &#9658; </i> &nbsp; Assistir</button>
+        <button id="moreInfo" onclick="openModal()"><i> &#8520; </i> &nbsp; Mais informações</button>
+        
+        <div class="modal-More-Info" id="ModalMoreInfo">
+            <span class="close-div" onclick="closeModal()"> &times; </span>
+            <div class="main-image">
+                <button id="playWatchTwo"> <i> &#9658; </i> &nbsp; Assistir</button>
+                <span class="add-list" id="list-button" onmouseenter="showMessage ()" on onmouseleave="hiddenMessage()"> &#10009; </span>
+                <span id="like-option" onmouseenter="showLikeButtons ()" ><img src="../profile-images/like-image.png" alt=""></span>
+                <div class="add-list-message" id="list-message">
+                    Adicionar à Minha lista  
+                  </div>
+                  <div class="likeMessage">
+                    <p class="like-message" id="messageOne" >Não é para mim</p>
+                    <p class="like-message" id="messageTwo" >Gostei</p>
+                    <p class="like-message" id="messageThree" >Amei!</p>
+                </div>
+                  <div class="list-like" id="likeList" onmouseleave="closeLikeButtons()">
+                    <img src="../profile-images/like-image.png" alt="" id="like-one" class="likes-menu" onmouseover="showLikeMessageOne()" onmouseleave="closeLikeMessageOne()">
+                    <img src="../profile-images/like-image.png" alt="" id="like-two" class="likes-menu" onmouseover="showLikeMessageTwo()" onmouseleave="closeLikeMessageTwo()">
+                    <img src="../profile-images/like-image.png" alt="" id="like-three" class="likes-menu" onmouseover="showLikeMessageThree()" onmouseleave="closeLikeMessageThree()">
+                </div>
+            </div>
+            <div class="second-div">
+                <div class="div-descriptions">
+                    <p id="description-one"> <span>Novo</span> 2022 <span>16</span> 2min 30s </p>
+                    <p id="description-two"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, cumque! Minima perferendis nesciunt reiciendis mollitia, iste, architecto doloribus sint in beatae, ducimus repudiandae quis odit facere aliquam fugiat quidem et.</p>
+                </div>
+                <div class="div-descriptionsTopics">
+                    <p> <span class="word-topic">Elenco:</span> Lorem, ipsum. </p>
+                    <p> <span class="word-topic">Gênero:</span> Lorem, ipsum dolor.</p>
+                    <p> <span class="word-topic">Cenas e momentos:</span> Lorem, ipsum dolor.</p>
+                </div>
+            </div>
+        </div>
+       
+        
+</div>
+<button id="volVideo" onclick="mute()"><strong id="soundIcon">&#9836;</strong></button>
+    
+    <script src="browse.js"></script>
 </body>
 </html>

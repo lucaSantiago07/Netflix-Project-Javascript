@@ -47,6 +47,7 @@ https://youtu.be/hQK3l3r-a-s (versão 2.0)
 - Iniciar a produção do browse.<br>
 - Dentro do Browse, criar o header (menu ao lado do logo, menu suspenso com as opções do perfil e colocar a logo)</p>
 
-<h3> Problemas para resolver na Netflix 2.3:</h3>
+<h3> Mudanças Netflix 2.3:</h3>
 <p>- Criar a DIV que contém o vídeo principal da netflix<br>
-- Criar a primeira faixa de vídeos ("Adicionados recentemente")
+- Criar o Modal - Mais informações do vídeo principal
+
