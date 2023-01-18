@@ -22,7 +22,7 @@ var one = 0
                     let newe = document.createElement ("div")
                     newe.id = 'foto1'
                     newe.className = 'perfis'
-                    newe.href = './browse.html' 
+                    newe.href = '/src/browse.html' 
                     
                     let show = document.createElement('img')
                     show.src = olderPerfils[i+1]
@@ -33,7 +33,7 @@ var one = 0
 
                     let a = document.createElement('a')
                     a.id = `id${i+1}`
-                    a.href = 'browse.html'
+                    a.href = '/src/browse.html'
 
                     newe.appendChild(a)
                     a.appendChild(show)  
@@ -65,9 +65,6 @@ var one = 0
 
 function namee (){
     
-    if (perfil.length == 10) {
-        alert ('ok')
-    }
     var data
     let nome = prompt("Qual o nome do usuário?")
     let yearOld = prompt ("Qual a faixa etária do perfil?\n1 - Crianças pequenas\n2 - Crianças mais velhas (10+)\n3 - Adolescentes (12+)\n4 - Adulto (livre)")
@@ -184,40 +181,4 @@ console.log (perfil)
     
 }
 
-
-
-/*
-    
-function namee (){
-
-    
-
-    let newe = document.createElement ("div")
-    newe.id = 'foto1'
-    newe.className = 'perfis'
-    let show = document.createElement('img')
-    
-    show.src = 'https://www.horadecodar.com.br/wp-content/uploads/2020/09/alterar-o-src-de-uma-imagem-com-JavaScript-capa.png'
-    show.className = 'images'
-    let text1 = document.createElement('span')
-    text1.innerHTML = "Lucas"
-    const botaoo = document.getElementById('agua')
-    let nomes = document.getElementById('bot')
-    
-    botaoo.insertBefore(newe,nomes)
-    newe.appendChild(show)   
-    newe.appendChild(text1)
-    
-
-    
-}
-
-const inputName = document.getElementById('inputName')
-inputName.value = "ok"
-
-export default namee
-
-
-
-*/
 

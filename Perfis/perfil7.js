@@ -210,7 +210,7 @@ function save() {
 
 
 function cancel() {
-  window.location.href = "../src/index-copy.html";
+  window.location.href = "../index.html";
 }
 
 function deleted() {
