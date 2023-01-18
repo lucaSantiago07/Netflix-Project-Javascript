@@ -7,66 +7,71 @@ body {
     background-repeat: no-repeat;
     overflow-y: hidden;
     height: 1000px;
-    
-    
+
+
 }
 
 @keyframes pageLoad {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 @-webkit-keyframes pageLoad {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
-.pageLoad{
+.pageLoad {
     animation: pageLoad 1s ease-in-out;
 }
 
-section{
+section {
     margin-top: 10%;
     margin-bottom: 20%;
 }
-
 
 .perfis {
     width: 150px;
     height: 150px;
     margin-right: 50px;
-    display: inline-block; 
+    display: inline-block;
     opacity: 0.9;
     margin-left: 5px;
-
-
-    
 }
 
-    .perfis:hover {
-        opacity: 1;
-        
-    }
+.perfis:hover {
+    opacity: 1;
 
-span{
+}
+
+span {
     font-size: 27px;
-    margin-inline-start: 5%;  
-    opacity: 0.5; 
-    
+    margin-inline-start: 5%;
+    opacity: 0.5;
+
 }
 
 
-.images {   
+.images {
     width: 150px;
     height: 150px;
     border-radius: 6x;
     border: 4px solid transparent;
     border-radius: 6px;
-    
 }
 
-.images:hover{
-    border:4px solid white;
+.images:hover {
+    border: 4px solid white;
     border-radius: 6px;
 
 }
@@ -81,9 +86,9 @@ button {
 
 
 
-.botao1{
+.botao1 {
     background: transparent;
-    color:  rgba(255, 255, 255, 0.306);    
+    color: rgba(255, 255, 255, 0.306);
     padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
@@ -101,6 +106,8 @@ button {
     display: inline-block;
     margin-right: 30px;
     width: max-content;
+    cursor: pointer;
+    
 }
 
 #botdiv {
@@ -117,10 +124,10 @@ button {
 
 #bot {
     width: max-content;
-    margin-left: 350px;       
+    margin-left: 350px;
 }
 
 a {
     color: inherit;
-text-decoration: none;
+    text-decoration: none;
 }
