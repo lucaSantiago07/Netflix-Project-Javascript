@@ -2,13 +2,17 @@
 window.onload = function () {
     var etaria = document.getElementById('faixaEtaria')
     var perfil = document.getElementById('perfil')
-    var perfil1 = document.getElementById('perfil2')
-    var perfil2 = document.getElementById('perfil3')
-    var perfil3 = document.getElementById('perfil4')
-    var perfil4 = document.getElementById('perfil5')
-
+    var perfil1 = document.getElementById('2Perfil')
+    var perfil2 = document.getElementById('3Perfil')
+    var perfil3 = document.getElementById('4Perfil')
+    var perfil4 = document.getElementById('5Perfil')
+    var perfil1Img = document.getElementById('perfil2')
+    var perfil2Img = document.getElementById('perfil3')
+    var perfil3Img = document.getElementById('perfil4')
+    var perfil4Img = document.getElementById('perfil5')
+    var perfisImagensMenu = [perfil1Img, perfil2Img, perfil3Img, perfil4Img]
     var perfisMenu = [perfil1, perfil2, perfil3, perfil4]
-
+    
     var etariaOption = JSON.parse(localStorage.getItem(('idades')))
         switch (Number(etariaOption[0])) {
             case 1:
@@ -26,30 +30,36 @@ window.onload = function () {
         }   
 
         var perfilName = JSON.parse(localStorage.getItem(('perfis')))
+        var perfisNames = []
         var perfisImages = []
+        
 
         for (let i = 0; i <perfilName.length; i++){
-            if (i%2==0)
-                perfisImages.push(perfilName[i])
+            if (i%2==0){
+                perfisNames.push(perfilName[i])
+                
                }
+            else {
+                perfisImages.push(perfilName[i])
+            }
 
             
-        for (let i = 1; i < perfisImages.length; i++){
-            perfisMenu[i-1].innerText = perfisImages[i]
-            
+        for (let i = 1; i < perfisNames.length; i++){
+            perfisMenu[i-1].innerText = perfisNames[i]
+            perfisImagensMenu[i-1].src = perfisImages[i]    
         }
+
     var perfilImage = JSON.parse(localStorage.getItem(('perfis')))
             perfil.src = perfilImage[1]
-    
+    console.log (perfisImages)
     let nameVideo = document.getElementById('iframeOne')
     document.getElementById('serie-title').innerText = nameVideo.title
-
     let resumeVideo = document.getElementById('resumeOne').innerHTML
     document.getElementById('serie-resume').innerText = resumeVideo
     document.getElementById('description-two').innerText = resumeVideo
     
 
-        }
+        }}
 
 var numberInput = 0
 function searchEnter() {
@@ -135,7 +145,7 @@ function mute () {
         if (muteIf == 0) {
             muteIf = 1
             muteOne.src += "&mute=1"
-            muteTwo = muteOne.src.substring(0,69)
+            muteTwo = muteOne.src.substring(0,63)
             console.log (muteOne)
             
             
@@ -235,6 +245,4 @@ function showLikeMessageThree () {
 function closeLikeMessageThree() {
     document.getElementById('messageThree').style.visibility = 'hidden'
 }
-
-
 

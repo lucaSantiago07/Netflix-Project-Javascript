@@ -35,23 +35,25 @@
                 <a> <img src="../profile-images/boy-one.png"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio repellat eius earum eligendi vero expedita harum minima voluptate! Sint nisi incidunt maiores molestias fuga enim maxime esse saepe facilis veniam!</a>
             </div>
         </li>
-           <li onmouseenter="openMenuSuspense()" > <img id="perfil" alt="Perfil"> &nbsp;<img id="seta" class="setas" src="../profile-images/seta-triangular-preenchida-para-baixo.png"></img>
-            <select class="menu-suspense" id="menu-suspense" size="7" onmouseleave="closeMenuSuspense()">
-                <option id="perfil2"> Perfil 1</option>
-                <option id="perfil3"><img src="">Perfil 2</option>
-                <option id="perfil4"><img src="">Perfil 3</option>
-                <option id="perfil5"><img src="">Perfil 4</option>
-                
-                <option>Gerenciar Perfis</option>
-                <option>Conta</option>
-                <option>Sair da Netflix</option>
-            </select>
+           <li onmouseenter="openMenuSuspense()" > <img id="perfil" alt="Perfil"> &nbsp;<img id="seta" class="setas" src="../profile-images/triangulo-seta-branco.png"></img>
+            <div class="menu-suspense" id="menu-suspense" onmouseleave="closeMenuSuspense()">
+                <div class="div-menu-suspense"><img src="" class="img-menu-suspense" id="perfil2"> <a id="2Perfil"> </a></div>
+                <div class="div-menu-suspense"><img src="" class="img-menu-suspense" id="perfil3"> <a id="3Perfil"> </a></div>
+                <div class="div-menu-suspense"><img src="" class="img-menu-suspense" id="perfil4"><a id="4Perfil"> </a></div>
+                <div class="div-menu-suspense" id="last-div-menu-suspense"><img src="" class="img-menu-suspense" id="perfil5"><a id="5Perfil"> </a></div>
+                <a href="gerenciar-copy.html" class="a-menu-suspense"> <img src="../profile-images/img-gerenciar-perfis.png" class="img-menu-suspense"> Gerenciar Perfis</a>
+                <a class="a-menu-suspense"> <img src="../profile-images/transferir-perfil.png" class="img-menu-suspenso" alt=""> Transferir perfil</a>
+                <a class="a-menu-suspense"> <img src="../profile-images/img-conta-removebg-preview.png" class="img-menu-suspenso" alt=""> Conta</a>
+                <a class="a-menu-suspense"> <img src="../profile-images/kisspng-question-mark-white-computer-icons-clip-art-question-mark-5abc8e7ba4c177.2307833615223066836748 (1).png" alt="" srcset="" class="img-menu-suspense"> Central de Ajuda</a>
+                <a id="last-a-menu-suspense">Sair da Netflix</a>
+            </div>
+            
            </li> 
     </ul>
     </header>
     <div id="main-content">
         <figure>
-            <iframe width="100%" height="100%" id="iframeOne" src="https://www.youtube.com/embed/WEGvv77W9Ok?autoplay=1&controls=0"  title="Projeto Netflix Versão 1.5" frameborder="0" allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="100%" height="100%" id="iframeOne" src="https://www.youtube.com/embed/Xut16wYJY7Y?autoplay=1&controls=0"  title="Projeto Netflix Versão 1.5" frameborder="0" allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <figcaption hidden id="resumeOne">Versão 1.5 do Projeto Netflix criado do zero e em HTML, CSS, JAVASCRIPT</figcaption>
         </figure>
     </div>
@@ -98,7 +100,15 @@
         
 </div>
 <button id="volVideo" onclick="mute()"><strong id="soundIcon">&#9836;</strong></button>
-    
+
+<section id="likes-series">
+        <span id="likes-series-title">Assistir Novamente</span>
+    <div class="card-series" >
+        
+    </div>
+    <div class="card-series"></div>
+</section>
+
     <script src="browse.js"></script>
 </body>
 </html>
